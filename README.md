@@ -3,34 +3,20 @@
 
 
 * ### Thema
-In deze opdracht moesten we voor de eerste keer onze eigen API maken. Ik
-koos ervoor om mijn eigen API te linken aan Twitter, en hier dan
-informatie af te halen. Ik heb in totaal 2 GET-requests en 1
-POST-request.
+In deze opdracht moest ik verder werken aan mijn vorige API en hem uitbreiden. Mijn eerste API was stond de gebruiker toe om de username van een persoon zijn/haar Twitter account in te geven in de POST endpoint. Daarna waren er 2 GET endpoints die informatie over deze persoon gaven, namelijk de hoeveelheid tweets dat deze persoon verstuurd had en dan ook nog eens 5 tweets van dit profiel. Wat ik tijdens dit project heb toegevoegd is dat de data niet zomaar getoond wordt, maar dat deze wordt opgeslagen in een database waaruit je de informatie later kon opvragen. Ik heb nog wat POST en GET endpoints toegevoegd en zoals gevraagd ook een DELETE en een PUT endpoint. Tot slot zit er deze keer ook security op de API, dus nu moet je een account maken en je inloggen om van de endpoints gebruik te kunnen maken.
 
-De POST-request werkt met Twitter users dus als je de user ingeeft dan
-kom je over deze de informatie te weten, bv: “KobeVandendijck” voor
-mezelf of “elonmusk”. De eerste GET-request toont hoe veel tweets deze
-persoon al gepost heeft in het bestaan van het account, en de tweede
-toont je er 5 zonder foto’s.
+Dit was met het gebruik van een database waarin 3 tabellen moesten aangemaakt worden.
 
-De front-end is een klein beetje gestyled, hij heeft een zachte
-achtergrondkleur, 1 tekstvak voor de post met een button, 2 buttons voor
-de GET-requests,
+de 3 tabellen zijn:
+  - User: In deze tabel worden alle aangemaakte users opgeslagen, samen met hun hashed paswoord.
+  - Searches: in deze tabel sla ik alle opzoekingen van Twitter usernames opgeslagen die vanuit mijn api gedaan worden. De concrete data die bijgehouden wordt is: de naam van de persoon, de id van het profiel, op welk uur van welke dag dit oopgezocht is en tot slot ook nog eens de hoeveelheid tweets dat deze persoon al gepost heeft.
+  - Tweets: In deze tabel worden enkele tweets van het opgezochte profiel opgeslagen. Er wordt ook vooraleer dat er een nieuwe entry gemaakt wordt gecontroleerd of dat de tweet nog niet in de database staat. Dit gebeurt op basis van de id die Twitter aan de tweet gegeven heeft.
+
+
+
 
 * ### Open API
 
-![image](https://user-images.githubusercontent.com/91118329/202916629-33350571-ab62-4e72-9fed-ae37579dd584.png)
-
-* ### Website
-
-![image](https://user-images.githubusercontent.com/91118329/202916687-ce8ea136-495b-4a95-9a44-c871ceba3333.png)
-
-![image](https://user-images.githubusercontent.com/91118329/202916701-be3e688d-da02-4f6a-98b8-ce0a6977cc6b.png)
-
-![image](https://user-images.githubusercontent.com/91118329/202916709-e5d2ff8d-4467-4e59-aef9-621d38e8b7c6.png)
-
-![image](https://user-images.githubusercontent.com/91118329/202916717-06704901-a568-4b2a-a810-f50c6329c073.png)
 
 * ### Postman
 
