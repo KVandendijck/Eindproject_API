@@ -10,19 +10,29 @@ Dit was met het gebruik van een database waarin 3 tabellen moesten aangemaakt wo
 de 3 tabellen zijn:
   - User: In deze tabel worden alle aangemaakte users opgeslagen, samen met hun hashed paswoord.
   - Searches: in deze tabel sla ik alle opzoekingen van Twitter usernames opgeslagen die vanuit mijn api gedaan worden. De concrete data die bijgehouden wordt is: de naam van de persoon, de id van het profiel, op welk uur van welke dag dit oopgezocht is en tot slot ook nog eens de hoeveelheid tweets dat deze persoon al gepost heeft.
-  - Tweets: In deze tabel worden enkele tweets van het opgezochte profiel opgeslagen. Er wordt ook vooraleer dat er een nieuwe entry gemaakt wordt gecontroleerd of dat de tweet nog niet in de database staat. Dit gebeurt op basis van de id die Twitter aan de tweet gegeven heeft.
+  - Tweets: In deze tabel worden enkele tweets van het opgezochte profiel opgeslagen, de informatie die wordt opgeslagen is de id van het profiel dat de tweet gepost heeft, de id van de tweet zelf en tot slot. Er wordt ook vooraleer dat er een nieuwe entry gemaakt wordt gecontroleerd of dat de tweet nog niet in de database staat. Dit gebeurt op basis van de id die Twitter aan de tweet gegeven heeft.
 
 ## De endpoints met screenshots (Open API, Postman)    
 
 ![image](https://user-images.githubusercontent.com/91118329/211166460-e5f7bb8f-2730-448f-a32b-fee267e593b9.png)
 
-
-  
-  - /profile (POST): Met deze endpoint geef je een username in van een Twitter account, en deze endpoint verbind met een Twitter API om zo bepaalde informatie op te halen.
+  - /profile (POST): Met dit endpoint geef je een username in van een Twitter account, en deze endpoint verbind met een Twitter API om zo bepaalde informatie op te halen. En dan wordt deze informatie opgeslagen in 2 van de 3 tabellen namelijk de Tweets en de Searches tabellen. Verdere specificaties staan hierboven uitgelegd.
   ![image](https://user-images.githubusercontent.com/91118329/211166197-e698b2fb-aa07-4695-8708-2e098c0eb474.png)
   ![image](https://user-images.githubusercontent.com/91118329/211166241-4ed1c4d8-5102-405e-bec7-97b3a3a3f386.png)
   ![image](https://user-images.githubusercontent.com/91118329/211166367-3af3ff37-5289-4cc1-8ecf-415ab188af88.png)
-  -  
+  - /alltweets (GET): Dit endpoint toont alle tweets die zijn opgeslagen in de Tweets tabel van de database. Samen met de informatie die hierboven staat opgesomd.
+  ![image](https://user-images.githubusercontent.com/91118329/211166708-cabf12eb-23b8-4117-b98a-0ec7bbce6ddc.png)
+  ![image](https://user-images.githubusercontent.com/91118329/211166751-c0291bfd-fb50-4d31-845e-c2152bbac459.png)
+  - /allsearches (GET): Dit endpoint toont alle opgeslagen searches die gebeurt zijn sinds de database gemaakt is.
+  ![image](https://user-images.githubusercontent.com/91118329/211166811-92950378-0c66-433d-94e7-c49290cce3e4.png)
+  ![image](https://user-images.githubusercontent.com/91118329/211166828-8b2ed167-f754-4057-920a-6ad7336dccff.png)
+  - /token (POST): Met dit endpoint genereer je een bearer token dat kan meegestuurd worden van services die je niet op voorhand toestaan om in te loggen, een voorbeeld hiervan is Postman.
+  ![image](https://user-images.githubusercontent.com/91118329/211166986-4d32579c-51d7-413e-9839-275f5b9fad64.png)
+  ![image](https://user-images.githubusercontent.com/91118329/211167002-7cb6d127-dee2-4e0b-be75-2088750e5146.png)
+  ![image](https://user-images.githubusercontent.com/91118329/211167068-bfb6665a-ce47-44d8-b583-4ac38449281d.png)
+  - /users (POST): Dit endpoint laat jou een nieuwe user aanmaken en een wachtwoord. Dit wachtwoord wordt hierna gehashed.
+
+
 
 ### Links
 
@@ -32,8 +42,12 @@ de 3 tabellen zijn:
     
       - https://system-service-kvandendijck.cloud.okteto.net/profile
     
-      - <https://api-service-kvandendijck.cloud.okteto.net/user>
+      - https://system-service-kvandendijck.cloud.okteto.net/alltweets
     
-      - <https://api-service-kvandendijck.cloud.okteto.net/getNumberOfTweets>
+      - https://system-service-kvandendijck.cloud.okteto.net/allsearches
     
-      - <https://api-service-kvandendijck.cloud.okteto.net/gettweet>
+      - https://system-service-kvandendijck.cloud.okteto.net/token
+     
+      - 
+
+
