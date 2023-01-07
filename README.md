@@ -13,6 +13,10 @@ de 3 tabellen zijn:
   - Tweets: In deze tabel worden enkele tweets van het opgezochte profiel opgeslagen. Er wordt ook vooraleer dat er een nieuwe entry gemaakt wordt gecontroleerd of dat de tweet nog niet in de database staat. Dit gebeurt op basis van de id die Twitter aan de tweet gegeven heeft.
 
 ## De endpoints met screenshots (Open API, Postman)
+
+![image](https://user-images.githubusercontent.com/91118329/211166460-e5f7bb8f-2730-448f-a32b-fee267e593b9.png)
+
+
   
   - /profile (POST): Met deze endpoint geef je een username in van een Twitter account, en deze endpoint verbind met een Twitter API om zo bepaalde informatie op te halen.
   ![image](https://user-images.githubusercontent.com/91118329/211166197-e698b2fb-aa07-4695-8708-2e098c0eb474.png)
