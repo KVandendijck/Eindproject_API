@@ -2,7 +2,7 @@
 ## Kobe Vandendijck 2CCS02
 
 
-* ### Thema
+### Thema
 In deze opdracht moest ik verder werken aan mijn vorige API en hem uitbreiden. Mijn eerste API was stond de gebruiker toe om de username van een persoon zijn/haar Twitter account in te geven in de POST endpoint. Daarna waren er 2 GET endpoints die informatie over deze persoon gaven, namelijk de hoeveelheid tweets dat deze persoon verstuurd had en dan ook nog eens 5 tweets van dit profiel. Wat ik tijdens dit project heb toegevoegd is dat de data niet zomaar getoond wordt, maar dat deze wordt opgeslagen in een database waaruit je de informatie later kon opvragen. Ik heb nog wat POST en GET endpoints toegevoegd en zoals gevraagd ook een DELETE en een PUT endpoint. Tot slot zit er deze keer ook security op de API, dus nu moet je een account maken en je inloggen om van de endpoints gebruik te kunnen maken.
 
 Dit was met het gebruik van een database waarin 3 tabellen moesten aangemaakt worden.
@@ -15,17 +15,14 @@ de 3 tabellen zijn:
 
 
 
-* ### Open API
+### Open API
 
 
-* ### Postman
+### Postman
 
-![image](https://user-images.githubusercontent.com/91118329/202916726-d5f76f34-6902-44f0-a375-eacb36d8439a.png)
-![image](https://user-images.githubusercontent.com/91118329/202916733-60287a42-89f0-4753-a553-f4e7665c8581.png)
 
-![image](https://user-images.githubusercontent.com/91118329/202916746-aa19f9e3-f5bf-43e8-8f14-d364b7633012.png)
 
-* ### Links
+### Links
 
   - Front-end repository:
     <https://github.com/KVandendijck/KVandendijck.github.io>
@@ -41,5 +38,3 @@ de 3 tabellen zijn:
       - <https://api-service-kvandendijck.cloud.okteto.net/getNumberOfTweets>
     
       - <https://api-service-kvandendijck.cloud.okteto.net/gettweet>
-
-  - Hosted front-end: <https://kvandendijck.github.io/>
