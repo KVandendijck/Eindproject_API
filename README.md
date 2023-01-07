@@ -12,14 +12,11 @@ de 3 tabellen zijn:
   - Searches: in deze tabel sla ik alle opzoekingen van Twitter usernames opgeslagen die vanuit mijn api gedaan worden. De concrete data die bijgehouden wordt is: de naam van de persoon, de id van het profiel, op welk uur van welke dag dit oopgezocht is en tot slot ook nog eens de hoeveelheid tweets dat deze persoon al gepost heeft.
   - Tweets: In deze tabel worden enkele tweets van het opgezochte profiel opgeslagen. Er wordt ook vooraleer dat er een nieuwe entry gemaakt wordt gecontroleerd of dat de tweet nog niet in de database staat. Dit gebeurt op basis van de id die Twitter aan de tweet gegeven heeft.
 
-## De endpoints met screenshots
-
-### Open API
-
-
-### Postman
-
-
+## De endpoints met screenshots (Open API, Postman)
+  
+  - /profile (POST): Met deze endpoint geef je een username in van een Twitter account, en deze endpoint verbind met een Twitter API om zo bepaalde informatie op te halen
+  
+  -  
 
 ### Links
 
@@ -30,7 +27,7 @@ de 3 tabellen zijn:
 
   - Okteto:
     
-      - <https://api-service-kvandendijck.cloud.okteto.net>
+      - https://system-service-kvandendijck.cloud.okteto.net/profile
     
       - <https://api-service-kvandendijck.cloud.okteto.net/user>
     
