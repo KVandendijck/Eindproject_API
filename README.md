@@ -14,14 +14,13 @@ de 3 tabellen zijn:
 
 ## De endpoints met screenshots (Open API, Postman)
   
-  - /profile (POST): Met deze endpoint geef je een username in van een Twitter account, en deze endpoint verbind met een Twitter API om zo bepaalde informatie op te halen
-  
+  - /profile (POST): Met deze endpoint geef je een username in van een Twitter account, en deze endpoint verbind met een Twitter API om zo bepaalde informatie op te halen.
+  ![image](https://user-images.githubusercontent.com/91118329/211166197-e698b2fb-aa07-4695-8708-2e098c0eb474.png)
+  ![image](https://user-images.githubusercontent.com/91118329/211166241-4ed1c4d8-5102-405e-bec7-97b3a3a3f386.png)
+  ![image](https://user-images.githubusercontent.com/91118329/211166367-3af3ff37-5289-4cc1-8ecf-415ab188af88.png)
   -  
 
 ### Links
-
-  - Front-end repository:
-    <https://github.com/KVandendijck/KVandendijck.github.io>
 
   - API repository: <https://github.com/KVandendijck/API>
 
